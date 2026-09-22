@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*
+Page Name: 
+Copyright 2026
+Author
+License
+*/
+
+/*---------------------*\
+        Content
+\*---------------------*/
+/**
+ * content ........... you are reading it
+ * Globel ...........realy style
+ * Layout ...........layout style
+ * Components ...... component style
+ * Pages
+ * Unility
+ */
+/* background:linear-gradient(#62585B,#FB0752) ; */
+/*---------------------*\
+        Globel
+\*---------------------*/
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+/*---------------------*\
+        Layout
+\*---------------------*/
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1e2a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 360px;
+  height: 540px;
+  border: 1px solid #3e4f4c;
+}
+.card-top {
+  background-color: #0f1717;
+  border: 1px solid #3e4f4c;
+  width: 360px;
+  height: 140px;
+  padding: 16px 8px;
+}
+.card-body {
+  background-color: #2f3e3c;
+  border: 1px solid #3e4f4c;
+  width: 360px;
+  height: 400px;
+  padding: 0px 4px;
+}
+.row {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+.col {
+}
+
+/*---------------------*\
+        Components
+\*---------------------*/
+button {
+  padding: 6px 6px;
+}
+
+.btn {
+  width: 25%;
+  height: 75px;
+}
+.history {
+  margin-top: 10px;
+  color: #a8c5bd;
+  font-size: 20px;
+  text-align: right;
+}
+.screen {
+  margin-top: 10px;
+  color: #e6f2ee;
+  font-size: 40px;
+  text-align: right;
+}
+/*---------------------*\
+        Pages
+\*---------------------*/
+
+/*---------------------*\
+        Unility
+\*---------------------*/
+.clearfix {
+}
