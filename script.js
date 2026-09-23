@@ -14,15 +14,17 @@ $(".card-body").on("click", (e) => {
     $screen.text($screen.text() * 0.01);
   } else if ($btn.text() === "=") {
     const secondNumber = Number($screen.text());
+    let result;
     if (operator === "+") {
-      $screen.text(firstNumber + secondNumber);
+      result = firstNumber + secondNumber;
     } else if (operator === "-") {
-      $screen.text(firstNumber - secondNumber);
+      result = firstNumber - secondNumber;
     } else if (operator === "×") {
-      $screen.text(firstNumber * secondNumber);
+      result = firstNumber * secondNumber;
     } else if (operator === "÷") {
-      $screen.text(firstNumber / secondNumber);
+      result = firstNumber / secondNumber;
     }
+    $screen.text(Number(result.toFixed(6)));
   } else if ($btn.hasClass("operator")) {
     firstNumber = Number($screen.text());
     operator = $btn.text();
