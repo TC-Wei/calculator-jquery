@@ -12,6 +12,10 @@ $(".card-body").on("click", (e) => {
     $screen.text($screen.text() * -1);
   } else if ($btn.text() === "%") {
     $screen.text($screen.text() * 0.01);
+  } else if ($btn.text() === ".") {
+    if (!$screen.text().includes(".")) {
+      $screen.text($screen.text() + $btn.text());
+    }
   } else if ($btn.text() === "=") {
     const secondNumber = Number($screen.text());
     let result;
